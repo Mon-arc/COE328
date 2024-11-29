@@ -79,30 +79,30 @@ begin
 
 process (yfsm) begin
 
-	case yfsm is 						-- Student Number 501263004 ~ By: Hassan Elshikh
+	case yfsm is 						
 		when s0 => current_state <= "0000";
-			student_id <= "0000";	-- d2 ~ 0
+			student_id <= "0000";	-- d2
 			
 		when s1 => current_state <= "0001";
-			student_id <= "0001";	-- d3 ~ 1
+			student_id <= "0001";	-- d3 
 			
 		when s2 => current_state <= "0010";
-			student_id <= "0010";	-- d4 ~ 2
+			student_id <= "0010";	-- d4 
 			
 		when s3 => current_state <= "0011";
-			student_id <= "0110";	-- d5 ~ 6
+			student_id <= "0110";	-- d5 
 			
 		when s4 => current_state <= "0100";
-			student_id <= "0011";	-- d6 ~ 3
+			student_id <= "0011";	-- d6
 		
 		when s5 => current_state <= "0101";
-			student_id <= "0000";	-- d7 ~ 0
+			student_id <= "0000";	-- d7 
 		
 		when s6 => current_state <= "0110";
-			student_id <= "0000";	-- d8 ~ 0
+			student_id <= "0000";	-- d8 
 		
 		when s7 => current_state <= "0111";
-			student_id <= "0100";	-- d9 ~ 4   
+			student_id <= "0100";	-- d9  
 	
 	end case;
 	
