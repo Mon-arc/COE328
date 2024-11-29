@@ -81,19 +81,19 @@ process (yfsm) begin
 
 	case yfsm is 						
 		when s0 => current_state <= "0000";
-			student_id <= "0000";	-- d2
+			student_id <= "0011";	-- d2
 			
 		when s1 => current_state <= "0001";
 			student_id <= "0001";	-- d3 
 			
 		when s2 => current_state <= "0010";
-			student_id <= "0010";	-- d4 
+			student_id <= "0000";	-- d4 
 			
 		when s3 => current_state <= "0011";
 			student_id <= "0110";	-- d5 
 			
 		when s4 => current_state <= "0100";
-			student_id <= "0011";	-- d6
+			student_id <= "1011";	-- d6
 		
 		when s5 => current_state <= "0101";
 			student_id <= "0000";	-- d7 
@@ -102,7 +102,7 @@ process (yfsm) begin
 			student_id <= "0000";	-- d8 
 		
 		when s7 => current_state <= "0111";
-			student_id <= "0100";	-- d9  
+			student_id <= "1111";	-- d9  
 	
 	end case;
 	
