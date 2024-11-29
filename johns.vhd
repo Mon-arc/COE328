@@ -25,12 +25,12 @@ BEGIN
 
     -- Display the last 6 digits of the student 
     CASE Qreg IS
-      WHEN "000" => W <= "0010"; -- d4 ~ 2
-      WHEN "100" => W <= "0110"; -- d5 ~ 3
-      WHEN "110" => W <= "0011"; -- d6 ~ 6
-      WHEN "111" => W <= "0000"; -- d7 ~ 0
-      WHEN "011" => W <= "0000"; -- d8 ~ 0
-      WHEN "001" => W <= "0100"; -- d9 ~ 4
+      WHEN "000" => W <= "0010"; -- d4 
+      WHEN "100" => W <= "0000"; -- d5 
+      WHEN "110" => W <= "0011"; -- d6 
+      WHEN "111" => W <= "0110"; -- d7 
+      WHEN "011" => W <= "0100"; -- d8 
+      WHEN "001" => W <= "0000"; -- d9 
       WHEN OTHERS => W <= "----"; -- Error
     END CASE;
   END PROCESS;
