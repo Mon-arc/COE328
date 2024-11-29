@@ -23,7 +23,7 @@ BEGIN
       Qreg(2) <= Qreg(1);
     END IF;
 
-    -- Display the last 6 digits of the student ID (263004)
+    -- Display the last 6 digits of the student 
     CASE Qreg IS
       WHEN "000" => W <= "0010"; -- d4 ~ 2
       WHEN "100" => W <= "0110"; -- d5 ~ 3
